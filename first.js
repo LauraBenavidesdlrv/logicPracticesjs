@@ -82,6 +82,18 @@ function calcSueldo(horas, tarifa){
 }
  calcSueldo(160, 3000)
 
+ /* 6) Crear un algoritmo que determine el # de CDs necesarios para hacer una copia de seguridad de un disco duro teniendo en cuenta que:
+       - El disco duro esta lleno de info (Esa la define el usuario en Gb)
+       - 1Gb = 1024Mb
+       - Capacidad de CD = 700 Mb -> 0.7Gb
+ */
+function numeroCDs(capacidadHD){
+    let conversion = 700/1024;
+    let numeroCds = (capacidadHD/conversion).toFixed(0);
+    console.log("El número de CDs necesarios es : " + numeroCds + " CDs")
+}
+numeroCDs(2048)
+
 
 
 
