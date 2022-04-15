@@ -82,7 +82,14 @@ function calcSueldo(horas, tarifa){
 }
  calcSueldo(160, 3000)
 
- /* 6) Crear un algoritmo que determine el # de CDs necesarios para hacer una copia de seguridad de un disco duro teniendo en cuenta que:
+// 6) calcular el área de un triángulo teniendo en cuenta sus tres medidas, usar la formula de Herón
+function calculoArea(lado1,lado2,lado3){
+    let semiperimtro = (lado1 + lado2 + lado3)/2;
+    let area = Math.sqrt(semiperimtro*(semiperimtro-lado1)*(semiperimtro-lado2)*(semiperimtro-lado3)).toFixed(2)
+    console.log("El área del triangulo es " + area + " cm^2")
+}
+calculoArea(5,5,5)
+ /* 7) Crear un algoritmo que determine el # de CDs necesarios para hacer una copia de seguridad de un disco duro teniendo en cuenta que:
        - El disco duro esta lleno de info (Esa la define el usuario en Gb)
        - 1Gb = 1024Mb
        - Capacidad de CD = 700 Mb -> 0.7Gb
