@@ -34,9 +34,12 @@
             
             <section id="one" class="article">
                 <header>
+                    <div class="title"></div>
                     <h2>What is the distance?</h2>
                     <p>Calculate the distance of a car in km if it goes at a speed and time determined by the user.</p>
+                    <a href="#">See code &rarr;</a>
                     <img src="https://img.icons8.com/fluency/48/000000/fiat-500.png"/>
+                    
                 </header>
                 <form action="#one">
                     <label for="">Enter speed (km/h)</label>
@@ -53,13 +56,54 @@
                 </form>
             </section>
             <section id="two" class="article">
-                <header>
+                <header >
                     <h2>Find a student's GPA</h2>
                     <p>Enter the grades and calculate the academic average of a student.</p>
-                    <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-grades-university-flaticons-flat-flat-icons.png"/>                </header>
+                    <a href="#">See code &rarr;</a>
+                    <div class="img">
+                        <img src="https://img.icons8.com/external-flaticons-flat-flat-icons/64/000000/external-grades-university-flaticons-flat-flat-icons.png"/>                
+                        <img  src="https://img.icons8.com/dusk/64/000000/ratings.png"/>
+                        <img src="https://img.icons8.com/doodle/48/000000/circled-f--v1.png"/>
+                        <img  src="https://img.icons8.com/dusk/64/000000/test-partial-passed.png"/>                   
+                    </div>
+
+                </header>
                 <form action="#two">
-                    <label for="">Enter the grades (separate them by "-")</label>
-                    <input type="text" pattern="[A-Za-z0-9_-]{1,15}"id="grades" step="0.1" >
+                    <p>Enter the grades</p>
+                    <div class="grades">
+                        <div class="par">
+                            <label for="">Grade1</label>
+                            <input type="number" id="grade" step="0.1" >
+                            <label for="">Grade2</label>
+                            <input type="number" id="grade" step="0.1" >
+                        </div>
+                        <div class="par">
+                            <label for="">Grade3</label>
+                            <input type="number" id="grade" step="0.1" >
+                            <label for="">Grade4</label>
+                            <input type="number" id="grade" step="0.1" >
+                        </div>
+                        <div class="par">
+                            <label for="">Grade5</label>
+                            <input type="number" id="grade" step="0.1" >
+                            <label for="">Grade6</label>
+                            <input type="number" id="grade" step="0.1" >
+                        </div>
+                        <div class="par">
+                            <label for="">Grade7</label>
+                            <input type="number" id="grade" step="0.1" >
+                            <label for="">Grade8</label>
+                            <input type="number" id="grade" step="0.1" >
+                        </div>
+                        <div class="par">
+                            <label for="">Grade9</label>
+                            <input type="number" id="grade" step="0.1" >
+                            <label for="">Grade10</label>
+                            <input type="number" id="grade step="0.1" >
+                        </div>
+
+
+                    </div>
 
                     <button type="submit" >calculate average</button>
                     <output id="result" >
@@ -67,139 +111,318 @@
                     </output>
                 </form>
             </section>
-            <section id="one" class="article">
+            <section id="three" class="article">
                 <header>
-                    <h2>Distance calculation</h2>
-                    <p>Calculate the distance of a car in km if it goes at a speed and time determined by the user.</p>
-                    <img src="https://img.icons8.com/fluency/48/000000/fiat-500.png"/>
+                    <h2>Test score</h2>
+                    <p>calculates the score of a list of applicants, taking into account that:</p>
+                    <ul>
+                        <li>Each correct answer equals 4 points.</li><br>
+                        <li>Each wrong answer is worth -1 points.</li><br>
+                        <li>Each blank answer is worth 0 points.</li><br>
+                    </ul>
+                    <div class="code-three">
+                        <a href="#">See code &rarr;</a>
+                        <img src="https://img.icons8.com/external-justicon-lineal-color-justicon/64/000000/external-exam-back-to-school-justicon-lineal-color-justicon.png"/>                
+                    </div>
+                    
+                    
                 </header>
-                <form action="">
-                    <label for="">Enter speed (km/h)</label>
-                    <input type="number">
-                    Enter time (h)
-                    <input type="number">
-                    <button type="submit">Calculate</button>
-                    <output>
-                        km
+                    <form action="#three">
+                    <table id="table-applicants">
+                        <tr class="header-table">
+                            <td>Applicant <br> Name</td>
+                            <td>Correct <br> answers</td>
+                            <td>wrong <br> answers</td>
+                            <td>blank <br> responses</td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  id="name"></td>
+                            <td><input type="number" id="correcta" step="0.1" ></td>
+                            <td><input type="number" id="incorrecta" step="0.1" ></td>
+                            <td><input type="number" id="blanco" step="0.1" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  id="name"></td>
+                            <td><input type="number" id="correcta" step="0.1" ></td>
+                            <td><input type="number" id="incorrecta" step="0.1" ></td>
+                            <td><input type="number" id="blanco" step="0.1" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  id="name"></td>
+                            <td><input type="number" id="correcta" step="0.1" ></td>
+                            <td><input type="number" id="incorrecta" step="0.1" ></td>
+                            <td><input type="number" id="blanco" step="0.1" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  id="name"></td>
+                            <td><input type="number" id="correcta" step="0.1" ></td>
+                            <td><input type="number" id="incorrecta" step="0.1" ></td>
+                            <td><input type="number" id="blanco" step="0.1" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  id="name"></td>
+                            <td><input type="number" id="correcta" step="0.1" ></td>
+                            <td><input type="number" id="incorrecta" step="0.1" ></td>
+                            <td><input type="number" id="blanco" step="0.1" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  id="name"></td>
+                            <td><input type="number" id="correcta" step="0.1" ></td>
+                            <td><input type="number" id="incorrecta" step="0.1" ></td>
+                            <td><input type="number" id="blanco" step="0.1" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  id="name"></td>
+                            <td><input type="number" id="correcta" step="0.1" ></td>
+                            <td><input type="number" id="incorrecta" step="0.1" ></td>
+                            <td><input type="number" id="blanco" step="0.1" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  id="name"></td>
+                            <td><input type="number" id="correcta" step="0.1" ></td>
+                            <td><input type="number" id="incorrecta" step="0.1" ></td>
+                            <td><input type="number" id="blanco" step="0.1" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  id="name"></td>
+                            <td><input type="number" id="correcta" step="0.1" ></td>
+                            <td><input type="number" id="incorrecta" step="0.1" ></td>
+                            <td><input type="number" id="blanco" step="0.1" ></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text"  id="name"></td>
+                            <td><input type="number" id="correcta" step="0.1" ></td>
+                            <td><input type="number" id="incorrecta" step="0.1" ></td>
+                            <td><input type="number" id="blanco" step="0.1" ></td>
+                        </tr>
+
+                    </table>
+                    <button type="submit" >Calculate score</button>
+                    <output id="result" >
+                        
                     </output>
                 </form>
             </section>
-            <section id="one" class="article">
+            <section id="four" class="article">
                 <header>
-                    <h2>Distance calculation</h2>
-                    <p>Calculate the distance of a car in km if it goes at a speed and time determined by the user.</p>
-                    <img src="https://img.icons8.com/fluency/48/000000/fiat-500.png"/>
+                    <div class="title4">
+                      <h2>calculating salary</h2> 
+                      <img src="https://img.icons8.com/dusk/64/000000/purchase-order.png"/> 
+                    </div>                    
+                    <p>Algorithm to calculate the salary of an employee.</p>               
+                    <a href="#">See code &rarr;</a>
                 </header>
                 <form action="">
-                    <label for="">Enter speed (km/h)</label>
+                    <label for="">Enter working hours (monthly)</label>
                     <input type="number">
-                    Enter time (h)
+                    <label for="">Hourly rate</label>
                     <input type="number">
                     <button type="submit">Calculate</button>
-                    <output>
-                        km
+                    <output id="result" >
+                        
                     </output>
                 </form>
             </section>
-            <section id="one" class="article">
+            <section id="five" class="article">
                 <header>
-                    <h2>Distance calculation</h2>
-                    <p>Calculate the distance of a car in km if it goes at a speed and time determined by the user.</p>
-                    <img src="https://img.icons8.com/fluency/48/000000/fiat-500.png"/>
+                    <img id="balon" src="https://img.icons8.com/cotton/64/000000/football-ball.png"/>
+                    <h2>Score in soccer tournament</h2>
+                    <p>Algorithm to calculate the total score of one or more soccer teams in an opening tournament taking into account that:</p>
+                    <ul>
+                        <li>Each match won equals 3 points</li>
+                        <li>Each tied match equals 1 point</li>
+                        <li>Each match lost equals 0 points</li>
+                    </ul>
+                    <div class="futbol">
+                    <a href="#">See code &rarr;</a>
+                    <img src="https://img.icons8.com/color/48/000000/football-team.png"/>               
+
+                    </div>
+                    
+                    
+                </header>
+                <form action="">
+                    <form action="#three">
+                        <table id="table-applicants">
+                            <tr class="header-table">
+                                <td>Team Name</td>
+                                <td>Correct answers</td>
+                                <td>wrong answers</td>
+                                <td>blank responses</td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"  id="name"></td>
+                                <td><input type="number" id="correcta" step="0.1" ></td>
+                                <td><input type="number" id="incorrecta" step="0.1" ></td>
+                                <td><input type="number" id="blanco" step="0.1" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"  id="name"></td>
+                                <td><input type="number" id="correcta" step="0.1" ></td>
+                                <td><input type="number" id="incorrecta" step="0.1" ></td>
+                                <td><input type="number" id="blanco" step="0.1" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"  id="name"></td>
+                                <td><input type="number" id="correcta" step="0.1" ></td>
+                                <td><input type="number" id="incorrecta" step="0.1" ></td>
+                                <td><input type="number" id="blanco" step="0.1" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"  id="name"></td>
+                                <td><input type="number" id="correcta" step="0.1" ></td>
+                                <td><input type="number" id="incorrecta" step="0.1" ></td>
+                                <td><input type="number" id="blanco" step="0.1" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"  id="name"></td>
+                                <td><input type="number" id="correcta" step="0.1" ></td>
+                                <td><input type="number" id="incorrecta" step="0.1" ></td>
+                                <td><input type="number" id="blanco" step="0.1" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"  id="name"></td>
+                                <td><input type="number" id="correcta" step="0.1" ></td>
+                                <td><input type="number" id="incorrecta" step="0.1" ></td>
+                                <td><input type="number" id="blanco" step="0.1" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"  id="name"></td>
+                                <td><input type="number" id="correcta" step="0.1" ></td>
+                                <td><input type="number" id="incorrecta" step="0.1" ></td>
+                                <td><input type="number" id="blanco" step="0.1" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"  id="name"></td>
+                                <td><input type="number" id="correcta" step="0.1" ></td>
+                                <td><input type="number" id="incorrecta" step="0.1" ></td>
+                                <td><input type="number" id="blanco" step="0.1" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"  id="name"></td>
+                                <td><input type="number" id="correcta" step="0.1" ></td>
+                                <td><input type="number" id="incorrecta" step="0.1" ></td>
+                                <td><input type="number" id="blanco" step="0.1" ></td>
+                            </tr>
+                            <tr>
+                                <td><input type="text"  id="name"></td>
+                                <td><input type="number" id="correcta" step="0.1" ></td>
+                                <td><input type="number" id="incorrecta" step="0.1" ></td>
+                                <td><input type="number" id="blanco" step="0.1" ></td>
+                            </tr>
+    
+                        </table>
+                        <button type="submit" >Calculate score</button>
+                        <output id="result" >
+                            
+                        </output>
+                    </form>
+            </section>
+            <section id="six" class="article">
+                <header>
+                    <h2>Area of a triangle</h2>
+                    <p>Calculate the area of a triangle taking into account its three measurements, using Heron's formula.</p>
+                    <img src="https://img.icons8.com/color/48/000000/triangle-stroked.png"/>
+                    <a href="#">See code &rarr;</a>
                 </header>
                 <form action="">
                     <label for="">Enter speed (km/h)</label>
                     <input type="number">
-                    Enter time (h)
+                    <label for="">Enter speed (km/h)</label>
+                    <input type="number">
+                    <label for="">Enter speed (km/h)</label>
                     <input type="number">
                     <button type="submit">Calculate</button>
-                    <output>
-                        km
+                    <output id="result" >
+                        
                     </output>
                 </form>
             </section>
-            <section id="one" class="article">
+            <section id="seven" class="article">
                 <header>
-                    <h2>Distance calculation</h2>
-                    <p>Calculate the distance of a car in km if it goes at a speed and time determined by the user.</p>
-                    <img src="https://img.icons8.com/fluency/48/000000/fiat-500.png"/>
+                    <h2>How many CDs do you need?</h2>
+                    <p>Algorithm that determines the number of CDs needed to make a backup copy of a hard disk taking into account that:</p>
+                    <ul>
+                        <li>The hard disk is completely full of information (This is defined by the user in Gb)</li>
+                        <li>The capacity of a CD is 700 Mb</li>
+                        <li>1 Gigabyte is equal to 1024 Megabytes</li>
+                    </ul>
+                    <img src="https://img.icons8.com/officel/80/000000/burn-cd.png"/>                
+                    <a href="#">See code &rarr;</a>
                 </header>
                 <form action="">
-                    <label for="">Enter speed (km/h)</label>
-                    <input type="number">
-                    Enter time (h)
+                    <label for="">Enter hard drive capacity (GB)</label>
                     <input type="number">
                     <button type="submit">Calculate</button>
-                    <output>
-                        km
+                    <output id="result" >
+                        
                     </output>
                 </form>
             </section>
-            <section id="one" class="article">
+            <section id="eight" class="article">
                 <header>
-                    <h2>Distance calculation</h2>
-                    <p>Calculate the distance of a car in km if it goes at a speed and time determined by the user.</p>
-                    <img src="https://img.icons8.com/fluency/48/000000/fiat-500.png"/>
+                    <h2>Roman Numeral Converter</h2>
+                    <p>Convert the given number into a roman numeral.</p>
+                    <img src="https://img.icons8.com/color/96/000000/roman-helmet.png"/>                
+                    <a href="#">See code &rarr;</a>
                 </header>
                 <form action="">
-                    <label for="">Enter speed (km/h)</label>
+                    <label for="">Enter the number you want to convert</label>
                     <input type="number">
-                    Enter time (h)
-                    <input type="number">
-                    <button type="submit">Calculate</button>
-                    <output>
-                        km
+
+                    <button type="submit">Convert</button>
+                    <output id="result" >
+                        
                     </output>
                 </form>
             </section>
-            <section id="one" class="article">
+            <section id="nine" class="article">
                 <header>
-                    <h2>Distance calculation</h2>
-                    <p>Calculate the distance of a car in km if it goes at a speed and time determined by the user.</p>
-                    <img src="https://img.icons8.com/fluency/48/000000/fiat-500.png"/>
+                    <h2>Julius Caesar Cipher</h2>
+                    <p>Also known as shift cipher, it is an encryption method in which the letter positions of an alphabet are shifted by a given amount.<br> <br> This algorithm receives an offset-encrypted text string (of 11 positions) and returns the decrypted message.</p>
+                    
+                    <img src="https://img.icons8.com/office/80/000000/private2--v1.png"/>                
+                    <a href="#">See code &rarr;</a>
                 </header>
                 <form action="">
-                    <label for="">Enter speed (km/h)</label>
+                    <label for="">Insert the encrypted message</label>
                     <input type="number">
-                    Enter time (h)
-                    <input type="number">
-                    <button type="submit">Calculate</button>
-                    <output>
-                        km
+                    <button type="submit">Decode</button>
+                    <output id="result" >
+                        
                     </output>
                 </form>
             </section>
-            <section id="one" class="article">
+            <section id="ten" class="article">
                 <header>
-                    <h2>Distance calculation</h2>
+                    <h2>Cash Register</h2>
                     <p>Calculate the distance of a car in km if it goes at a speed and time determined by the user.</p>
-                    <img src="https://img.icons8.com/fluency/48/000000/fiat-500.png"/>
+                    <img src="https://img.icons8.com/office/80/000000/cash-register.png"/>                
+                    <a href="#">See code &rarr;</a>
                 </header>
                 <form action="">
-                    <label for="">Enter speed (km/h)</label>
+                    <label for="">Enter product</label>
+                    <input type="text">
+                    <label for="">Enter price</label>
                     <input type="number">
-                    Enter time (h)
-                    <input type="number">
-                    <button type="submit">Calculate</button>
-                    <output>
-                        km
+
+                    <button type="register">Register product</button>
+                    <label for="">Registered products</label>
+                    <output id="result" >
+                        
                     </output>
-                </form>
-            </section>
-            <section id="one" class="article">
-                <header>
-                    <h2>Distance calculation</h2>
-                    <p>Calculate the distance of a car in km if it goes at a speed and time determined by the user.</p>
-                    <img src="https://img.icons8.com/fluency/48/000000/fiat-500.png"/>
-                </header>
-                <form action="">
-                    <label for="">Enter speed (km/h)</label>
+
+                    <button type="comprar">Total</button>
+                    <label for="">Total to pay</label>
+
+                    <output id="result" >
+                        
+                    </output>
+                    <label for="">Payment</label>
                     <input type="number">
-                    Enter time (h)
-                    <input type="number">
-                    <button type="submit">Calculate</button>
-                    <output>
-                        km
+                    <label for="">Your change is:</label>
+                    <output id="result" >
+                        
                     </output>
                 </form>
             </section>

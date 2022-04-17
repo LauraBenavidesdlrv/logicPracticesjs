@@ -1,3 +1,4 @@
+/*Generals*/
 body{
     background-color: rgb(255, 255, 255);
     font-family: 'Karla', sans-serif;
@@ -6,183 +7,505 @@ body{
     .wrapper{
         margin: 60px;
     }
-#header{
-    height: 550px;
-    margin: 100px 50px 0px 50px ;
-}
-    #header h1{
-        font-size: 4em;
-        color: coral;
-    }
-    #header p{
-        font-size: 1.5em;
-        margin-bottom: 50px;
-    }
-    #header a{
-        font-size: 1.5em;
-        text-decoration: none;
-        border: 1px solid;
-        padding: 10px;
-        border-radius: 50px;
-        color: coral;
-    }
 
-    #img-bolita{
-        margin-top: 40px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-    }
-    #header #images-banner{
-        border: 1px solid;
-        padding: 15px;
-        border-radius: 100px;
-        color: black;
-        z-index: 0;
-        margin: 10px;
-        position: relative;
-        left: 10px;
-        width: 6%;
-    }
-    .arriba{
-        animation: arriba 3s infinite;
-
-    }
-    .abajo{
-        animation: abajo 3s infinite;
-    }
-
-    @keyframes arriba {
-        0%{
-            transform: translateY(45px);      
-
+    /*Header*/
+        #header{
+            height: 550px;
+            margin: 100px 50px 0px 50px ;
         }
-        50%{
-            transform: translateY(0px);      
-        }
-        100%{
-            transform: translateY(45px);      
-        }   
-    }
-    @keyframes abajo {
-        0%{
-            transform: translateY(0px);      
-
-        }
-        50%{
-            transform: translateY(45px);      
-        }
-        100%{
-            transform: translateY(0px); 
-        }     
-   
-    }
-    .levels{
-        margin-left: 53px;
-        font-size: 2.5em;
-    }
-
-        main{
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-evenly;
-
-        }
-            .article{
-                border: 1px solid ;
-                border-radius: 5px;
-                width: 40%;
-                padding: 20px;
-                display: flex; 
-                justify-content: space-between;
-                margin-bottom: 30px;
-                
+            #header h1{
+                font-size: 4em;
+                color: coral;
             }
-                .article header{
-                    width: 50%;
-                    
+            #header p{
+                font-size: 1.5em;
+                margin-bottom: 50px;
+            }
+            header a{
+                font-size: 1.5em;
+                text-decoration: none;
+                border: 1px solid;
+                padding: 10px;
+                border-radius: 50px;
+                color: coral;
+                display: flex;
+                align-self: flex-start;
+                margin: 20px 0px;
+            }
+
+            #img-bolita{
+                margin-top: 40px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+            #header #images-banner{
+                border: 1px solid;
+                padding: 15px;
+                border-radius: 100px;
+                color: black;
+                z-index: 0;
+                margin: 10px;
+                position: relative;
+                left: 10px;
+                width: 6%;
+            }
+            .arriba{
+                animation: arriba 3s infinite;
+
+            }
+            .abajo{
+                animation: abajo 3s infinite;
+            }
+
+            @keyframes arriba {
+                0%{
+                    transform: translateY(45px);      
+
                 }
-                
-                .article form{
-                    margin-left: 10px;
+                50%{
+                    transform: translateY(0px);      
+                }
+                100%{
+                    transform: translateY(45px);      
+                }   
+            }
+            @keyframes abajo {
+                0%{
+                    transform: translateY(0px);      
+
+                }
+                50%{
+                    transform: translateY(45px);      
+                }
+                100%{
+                    transform: translateY(0px); 
+                }     
+        
+            }
+            /*Levels*/
+            .levels{
+                margin-left: 53px;
+                font-size: 2.5em;
+            }
+            /*Contenido*/
+                main{
                     display: flex;
                     flex-direction: column;
-                    width: 50%;
-                    border-radius: 40px;
-                    padding: 14px;
-                    justify-content: center;
-                    align-items: center;
+                    flex-wrap: wrap;
                 }
-                #one form{
-                    background-color: rgb(255, 175, 146);
-                }
-                    #one form input{
-                        margin: 10px 0px 10px 0px;
-                        padding: 5px;
-                        border-radius: 3px;
-                        border: 1px solid white;
+                /*Generales section*/
+                    .article{
+                        border: 1px solid ;
+                        border-radius: 5px;
+                        padding: 20px;
+                        display: flex;                        
+                        margin-bottom: 30px;  
+                        align-items: center;
+                        justify-content: space-around;
+                        width: fit-content;                    
                     }
-                    
-                    .buttons{
-                        width: 55%;
-                    }
-                    .article form button{
-                        margin: 10px 0px 10px 0px;
-                        padding: 5px;
-                        border-radius: 3px;
-                        border: 1px solid white;
-                        display: flex;
-                        align-self: center;
-                        cursor: pointer;
-                    }
-
-                    #result{
-                        border: 1px solid white;
-                        border-radius: 3px;
-                        height: 30px;
-                        background-color: white;
-                        width: 50%;
-                        display: block;
-                        margin: auto;
-                        padding-top: 10px;
-                        text-align: center;                       
-                    }
-                    #one header img{
-                        width: 25%;
-                        animation: carInMovement 4s infinite;
-                    }
-                        @keyframes carInMovement {
-                            0%{
-                                transform: translateX(0%);  
-                            }
-                            100%{
-                                transform: translateX(270%);
-                            }
-  
+                        .article header{
+                            width: 50%;
+                            height: fit-content;
+                            display: flex;
+                            flex-direction: column;                     
+                        }                        
+                        .article form{
+                            margin-left: 10px;
+                            display: flex;
+                            flex-direction: column;
+                            border-radius: 40px;
+                            padding: 14px;
+                            justify-content: center;
+                            align-items: center;
                         }
-                #two form{
-                    background-color: rgb(87, 146, 148);
-                    color: white;
-                    text-align: center;
-                }
-                    #two form input{
-                        margin: 10px;
-                        padding: 5px;
-                        height: 40px;
-                    }
-                #two header img{
-                    animation: rotar 3s infinite 4s forwards;
-                    display: block;
-                    margin: auto;
-                }
-                @keyframes rotar {
-                    0%{
-                        width: 25%;
-                    }
+                            .article form input{
+                                margin: 10px 0px 10px 0px;
+                                padding: 10px;
+                                border-radius: 3px;
+                                border: 1px solid white;
+                                
+                            }
+                            .buttons{
+                                width: 55%;
+                            }                            
+                            .article form button{
+                                margin: 20px 5px;
+                                padding: 10px;
+                                border-radius: 3px;
+                                border: 1px solid white;
+                                display: flex;
+                                align-self: center;
+                                cursor: pointer;
+                                background-color: rgba(82, 70, 70, 0.281);
+                                color: white;
+                                font-size: 1.3em;
+                            }
+                            
+                            #result{
+                                border: 1px solid white;
+                                border-radius: 3px;
+                                height: 30px;
+                                background-color: white;
+                                width: 50%;
+                                display: block;
+                                margin: auto;
+                                padding-top: 10px;
+                                text-align: center;                       
+                            }
+                        /*Specific styles*/
+                            /*-------------One-----------*/
+                            #one form{
+                                background-color: rgb(255, 175, 146);
+                                width: 30%;
+                            }
+                                #one header img{
+                                    width: 10%;
+                                    animation: carInMovement 4s infinite;
+                                    margin-bottom: 30px;
+                                }
+                                @keyframes carInMovement {
+                                    0%{
+                                        transform: translateX(0%);  
+                                    }
+                                    100%{
+                                        transform: translateX(870%);
+                                    }
+    
+                                }
+                                #one form .buttons{
+                                    width: fit-content;
+                                }
 
-                    100%{
-                        width: 35%;
-                    }
 
+                            /*-------------Two-----------*/
+                            #two{
+                                align-self: flex-end;                   
+                            }
+                                #two header{
+                                    margin-left: 30px;
+                                    width: 40%;
+                                    display: flex;
+                                    flex-direction: column;
+                                    justify-content: flex-start;
+                                    align-items: flex-start;
+                                    height: 400px;
+                                }
+                                #two form{
+                                    background-color: rgb(87, 146, 148);
+                                    color: white;
+                                    margin: 20px;
+                                    padding: 40px;
+                                }
+                                    #two form .grades .par{
+                                        display: flex;
+                                        justify-content: center;
+                                        align-items: center;                                                                                                
+                                    }
+                                    #two form input{
+                                        margin: 20px;
+                                        padding: 10px;
+                                        height: 10px;
+                                        width: 50px;
+
+                                    }
+                                    #two header a{
+                                        color:rgb(87, 146, 148) ;
+                                    }
+                                    #two header .img{
+                                        margin-bottom: 40px;
+                                        display: flex;
+                                        align-self: center;
+                                    }
+                                    #two header .img2{
+                                        animation: rebote 6s infinite;
+                                        margin-top: 20px;
+                                        display: flex;
+                                        align-self: center;
+                                    }
+                                    #two header  img{
+                                        margin: 20px;
+                                        animation: rebote 6s infinite;
+
+
+                                    }
+                                    @keyframes zoom {
+                                        0%{
+                                            width: 15%;
+                                        }
+
+                                        100%{
+                                            width: 25%;
+                                        }  
+                                    }
+                                /*-------------Three-----------*/
+                                #three{
+                                    display: flex;
+                                    justify-content: space-between;
+                                    width: 80%;
+                                    padding: 20px;                            
+                                }
+                                    #three header{
+                                        line-height: 1.5em;
+                                        margin-left: 10px;
+                
+                                    }
+                                    .code-three{
+                                        display: flex;
+
+                                    
+                                    }
+                                    #three header a{
+                                        color:rgba(236, 177, 15, 0.534);
+                                    }
+
+                                    #three form{
+                                        background-color: rgba(236, 177, 15, 0.534);
+                                        color: white;
+                                        text-align: center;
+                                        border-radius: 15px;
+                                        width: 55%;
+                                        padding: 30px;
+                                    }
+                                        #three .header-table{
+                                            font-size: 1.3em;
+                                        }
+
+                                        #three table input{
+                                            margin:10px 20px ;
+                                            padding: 10px;
+                                            border-radius: 5px;
+                                            border: 1px solid white;
+                                            
+                                        }
+                                        #three table input[type=number]{
+                                            width: 35px;
+                                            
+                                        }
+                                            #three header img{
+                                                animation: rotar 0.5s infinite 4s forwards;
+                                                display: block;
+                                                margin: auto;
+                                            }
+                                        @keyframes rotar {
+                                            0%{
+                                                transform: rotateZ(-2deg);
+                                            }
+                                            50%{
+                                                transform: rotateZ(0deg);
+                                            }
                     
-                }
+                                            100%{
+                                                transform: rotateZ(2deg);
+                                            }  
+                                        }
+                                /*-------------Four-----------*/
+                                #four{
+                                    display: flex;
+                                    align-self: flex-end; 
+                                    justify-content: center;
+                                    width: 70%;                  
+                                }
+                                    .title4{
+                                        display: flex;
+                                        
+
+                                    }
+                                    #four header a{
+                                        color:rgba(122, 98, 160, 0.534) ;
+                                    }
+                                #four form{
+                                    background-color: rgba(122, 98, 160, 0.534);
+                                    color: white;
+                                    text-align: center; 
+                                    width: 30%;   
+                                    display: flex;
+                                    height: 250px;                          
+                                }
+                                            #four header img{
+                                                animation: rebote 6s infinite forwards;
+                                                width: 10%;
+                                                height: 10%;
+                                                position: relative;
+                                                top: 6px;
+                                                left: 15px;
+
+                                                
+                                            }
+                                            @keyframes rebote {
+                                                0%{
+                                                    transform: translateY(35px);
+                                                }
+                                                5%{
+                                                    transform: translateY(0px);
+                                                }
+                                                10%{
+                                                    transform: translateY(30px);
+                                                }
+                                                15%{
+                                                    transform: translateY(0px);
+                                                }
+                                                20%{
+                                                    transform: translateY(25px);
+                                                }
+                                                25%{
+                                                    transform: translateY(0px);
+                                                }
+                                                30%{
+                                                    transform: translateY(20px);
+                                                }
+                                                35%{
+                                                    transform: translateY(0px);
+                                                } 
+                                                40%{
+                                                    transform: translateY(15px);
+                                                } 
+                                                45%{
+                                                    transform: translateY(0px);
+                                                }
+                                                50%{
+                                                    transform: translateY(10px);
+                                                } 
+                                                55%{
+                                                    transform: translateY(0px);
+                                                }                                
+                                                60%{
+                                                    transform: translateY(5px);
+                                                } 
+                                                65%{
+                                                    transform: translateY(0px);
+                                                }                        
+                                            }
+                                /*-------------Five-----------*/
+                                #five{
+                                    display: flex; 
+                                    justify-content: center;
+                                    width: 70%;                  
+                                }
+                                    #five header{
+                                        background-color: aqua;
+                                        height: fit-content;
+                                        line-height: 1.5em;
+                                    }
+                                    .futbol{
+                                        display: flex;
+                                        align-items: center;
+                                    }
+                                    .futbol img{
+                                        width: 5%;
+                                        height: 5%;
+                                        animation: rotar 3s infinite;
+                                    }
+                                    #balon{                        
+                                        animation: rodar 0.3s infinito;
+                                    }
+                                    @keyframes rodar {
+                                        0%{
+                                            
+                                        }
+                                        
+                                    }
+                                #five form{
+                                    background-color: rgba(122, 214, 110, 0.534);
+                                    color: white;
+                                    text-align: center;
+                                    border-radius: 15px;
+                                    width: 50%;
+                                    padding: 30px;
+                                }
+                                    #five .header-table{
+                                        font-size: 1.3em;
+                                    }
+                                    #five header img{
+                                        margin-left: 30px;
+                                        width: 15%;                          
+                                            
+                                    }
+                                    #five table input{
+                                        margin:10px 20px ;
+                                        padding: 10px;
+                                        border-radius: 5px;
+                                        border: 1px solid white;
+                                        
+                                    }
+                                    #five table input[type=number]{
+                                        width: 35px;  
+                                    }
+                                    #five table input[type=text]{
+                                        width: 70px;  
+                                    }
+
+
+                                /*-------------Six-----------*/
+                                #six{
+                                    display: flex;
+                                    align-self: flex-end; 
+                                    justify-content: center;
+                                    width: 70%;                  
+                                }
+                                #six form{
+                                    background-color: rgb(255, 175, 146);
+                                    color: white;
+                                    text-align: center; 
+                                    width: 30%;   
+                                    display: flex;
+                                    height: 250px;                          
+                                }
+                                    #six header img{
+                                        animation: rotar 1s infinite 4s forwards;
+                                        display: block;
+                                        margin: auto;
+                                    }
+                                /*-------------Seven-----------*/
+                                #seven form{
+                                    background-color: rgb(87, 146, 148);
+                                    color: white;
+                                    text-align: center;
+                                }
+                                            #seven header img{
+                                                animation: rebote 3s infinite 4s forwards;
+                                                display: block;
+                                                margin: auto;
+                                            }
+                                /*-------------Eight-----------*/
+                                #eight form{
+                                    background-color: rgba(236, 177, 15, 0.534);
+                                    color: white;
+                                    text-align: center;
+                                }
+
+                                        #eight header img{
+                                            animation: rotar 0.4s infinite 4s forwards;
+                                            display: block;
+                                            margin: auto;
+                                        }
+                                /*-------------Nine-----------*/
+                                #nine form{
+                                    background-color: rgba(122, 98, 160, 0.534);
+                                    color: white;
+                                    text-align: center;
+                                }                                            
+                                            #nine header img{
+                                                animation: carInMovement2 5s infinite; 
+                                            }
+                                            @keyframes carInMovement2 {
+                                                0%{
+                                                    transform: translateX(0%);  
+                                                }
+                                                100%{
+                                                    transform: translateX(100%);
+                                                }
+                    
+                                            }
+                                /*-------------Ten-----------*/
+                                #ten form{
+                                    background-color: rgba(122, 214, 110, 0.534);
+                                    color: white;
+                                    text-align: center;
+                                }
+                                            #ten header img{
+                                                animation: zoom 3s infinite 4s forwards;
+                                                display: block;
+                                                margin: auto;
+                                            }

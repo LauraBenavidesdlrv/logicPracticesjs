@@ -72,7 +72,7 @@ puntaje2([
     {nombre:"Juliana", correctas:5, incorrectas:0, blanco:7 }
 ])
 
-/* 4) calcular puntaje total de un equipo en el torneo de apertura teniendo en cuenta que:
+/* 5) calcular puntaje total de un equipo en el torneo de apertura teniendo en cuenta que:
     Partido ganados -> 3 puntos
     partido empatado -> 1 puntos
     partido perdido -> 0 puntos
@@ -95,7 +95,7 @@ puntajeTorneoApertura([
     {Equipo:"Brasil", ganados:10, perdidos:0, empatados:1 }
 ])
 
-// 5) Se requiere un algoritmo para elaborara la plantilla de un empleado, teniendo en cuenta las horas laboradas al mes y de la tarifa por hora.
+// 4) Se requiere un algoritmo para elaborara la plantilla de un empleado, teniendo en cuenta las horas laboradas al mes y de la tarifa por hora.
 
 function calcSueldo(horas, tarifa){
     let sueldo = horas * tarifa;
