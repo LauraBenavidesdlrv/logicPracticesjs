@@ -1,21 +1,42 @@
 // 1) calcular distancia de carrito (km), teniendo: vel constante (km/h) y tiempo (h) en MRU
-function mru(vel, time){
-    let distance = vel * time;
-    console.log(distance + " km")
+function calcular(){
+    let speed = document.getElementById("speed").value
+    let time = document.getElementById("time").value
+    let distance = speed * time;
+    document.getElementById("result").innerHTML = distance + " km"; 
 }
-mru(50,0.5)
-
+document.getElementById("calc").onclick = function(){
+    calcular();
+}
+document.getElementById("reset").onclick = function(){
+    document.getElementById("result").innerHTML = 0 + " km"; 
+}
 // 2) sacar promedio de estudiante a partir de el número de notas que determine el profe 
+function prom(){
+    let grades = document.getElementById("grades").value; 
+    let numbers = grades.filter(element => {
+        if(isNaN(element)){
+            return false
+        }
+        else{
+            let sum = 0
+            for(let i of numbers){
+                sum += i
+                var nota = (sum/numbers.length).toFixed(2)
+            }  
+        }
+    })
+    document.getElementById("result").innerHTML = nota; 
 
-function prom(notas){
-    let sum = 0
-    for(let i of notas){
-        sum += i
-        var nota = (sum/notas.length).toFixed(2)
-    }
-    console.log(nota)
+
 }
-prom([2,2.5,5,4.2,2.1])
+document.getElementById("calc").onclick = function(){
+    calcular();
+}
+document.getElementById("reset").onclick = function(){
+    document.getElementById("result").innerHTML = 0 + " km"; 
+}
+
 
 /* 3) solicitar respuestas correctas, incorrectas y en blanco de un postulante, teniendo en cuenta que:
     correcta -> 4 puntos
@@ -89,17 +110,19 @@ function calculoArea(lado1,lado2,lado3){
     console.log("El área del triangulo es " + area + " cm^2")
 }
 calculoArea(5,5,5)
- /* 7) Crear un algoritmo que determine el # de CDs necesarios para hacer una copia de seguridad de un disco duro teniendo en cuenta que:
-       - El disco duro esta lleno de info (Esa la define el usuario en Gb)
-       - 1Gb = 1024Mb
-       - Capacidad de CD = 700 Mb -> 0.7Gb
- */
+/* 7) Crear un algoritmo que determine el # de CDs necesarios para hacer una copia de seguridad de un disco duro teniendo en cuenta que:
+    - El disco duro esta lleno de info (Esa la define el usuario en Gb)
+    - 1Gb = 1024Mb
+    - Capacidad de CD = 700 Mb -> 0.7Gb
+*/
 function numeroCDs(capacidadHD){
     let conversion = 700/1024;
     let numeroCds = (capacidadHD/conversion).toFixed(0);
     console.log("El número de CDs necesarios es : " + numeroCds + " CDs")
 }
 numeroCDs(2048)
+
+
 
 
 
