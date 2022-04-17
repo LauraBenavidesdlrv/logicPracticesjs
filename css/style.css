@@ -21,6 +21,9 @@ body{
                 font-size: 1.5em;
                 margin-bottom: 50px;
             }
+            #header  a{
+                width:15%;
+            }            
             header a{
                 font-size: 1.5em;
                 text-decoration: none;
@@ -32,6 +35,7 @@ body{
                 align-self: flex-start;
                 margin: 20px 0px;
             }
+            
 
             #img-bolita{
                 margin-top: 40px;
@@ -93,6 +97,7 @@ body{
                     display: flex;
                     flex-direction: column;
                     flex-wrap: wrap;
+                    margin: 60px;
                 }
                 /*Generales section*/
                     .article{
@@ -119,6 +124,7 @@ body{
                             padding: 14px;
                             justify-content: center;
                             align-items: center;
+                            padding-top: 30px;
                         }
                             .article form input{
                                 margin: 10px 0px 10px 0px;
@@ -226,7 +232,7 @@ body{
                                     }
                                     #two header  img{
                                         margin: 20px;
-                                        animation: rebote 6s infinite;
+                                        animation:  6s infinite;
 
 
                                     }
@@ -309,6 +315,7 @@ body{
                                 }
                                     .title4{
                                         display: flex;
+                                        align-items: center;
                                         
 
                                     }
@@ -384,7 +391,6 @@ body{
                                     width: 70%;                  
                                 }
                                     #five header{
-                                        background-color: aqua;
                                         height: fit-content;
                                         line-height: 1.5em;
                                     }
@@ -397,11 +403,40 @@ body{
                                         height: 5%;
                                         animation: rotar 3s infinite;
                                     }
-                                    #balon{                        
-                                        animation: rodar 0.3s infinito;
+                                    #balon{                 
+                                        animation: rodar 0.8s infinite ease;
+                                        
+                                    }
+                                    .cajabalon{
+                                        animation: move 1.5s infinite ease; 
+                                    }
+                                    @keyframes move {
+                                        0%{
+                                            transform: translateX(-50px);
+                                        }
+                                        100%{
+                                            transform: translateX(230px);
+                                        }                                        
                                     }
                                     @keyframes rodar {
                                         0%{
+                                            transform: rotateZ(0deg);
+                                        }
+                                        20%{
+                                            transform: rotateZ(45deg);
+                                        }
+                                        40%{
+                                            transform: rotateZ(90deg);
+                                        }
+                                        60%{
+                                            transform: rotateZ(180deg);
+                                        }
+                                        80%{
+                                            transform: rotateZ(270deg);
+                                        }
+                                        100%{
+
+                                            transform: rotateZ(360deg);
                                             
                                         }
                                         
@@ -442,7 +477,8 @@ body{
                                     display: flex;
                                     align-self: flex-end; 
                                     justify-content: center;
-                                    width: 70%;                  
+                                    width: 70%;   
+                                                  
                                 }
                                 #six form{
                                     background-color: rgb(255, 175, 146);
@@ -450,25 +486,42 @@ body{
                                     text-align: center; 
                                     width: 30%;   
                                     display: flex;
-                                    height: 250px;                          
+                                    height: fit-content;                           
                                 }
                                     #six header img{
                                         animation: rotar 1s infinite 4s forwards;
-                                        display: block;
-                                        margin: auto;
+                                        width: 10%;
+                                        height: 10%;
+                                        margin-left: 20px;
                                     }
                                 /*-------------Seven-----------*/
+                                #seven{
+                                    width:70% ;
+                                }
+                                 #seven header img{                                        animation:  3s infinite 4s forwards;
+                                    display: block;
+                                    margin: auto;
+                                    margin-left: 0px;
+                                    width: 50px;
+                                    height: 50px;
+                                }
+                                .boton7{
+                                    display: flex;
+
+                                }
                                 #seven form{
                                     background-color: rgb(87, 146, 148);
                                     color: white;
                                     text-align: center;
+                                    width: 30%;
+                                    height: 250px
                                 }
-                                            #seven header img{
-                                                animation: rebote 3s infinite 4s forwards;
-                                                display: block;
-                                                margin: auto;
-                                            }
+                                           
                                 /*-------------Eight-----------*/
+                                #eight{
+                                    display: flex;
+                                    align-self: flex-end;
+                                }
                                 #eight form{
                                     background-color: rgba(236, 177, 15, 0.534);
                                     color: white;
@@ -479,30 +532,51 @@ body{
                                             animation: rotar 0.4s infinite 4s forwards;
                                             display: block;
                                             margin: auto;
+                                            margin-bottom: 30px;
                                         }
                                 /*-------------Nine-----------*/
+                                #nine {
+                                    width: 70%;
+                                }
+                                #nine header{
+                                    width: 50%;
+                                   
+                                }
                                 #nine form{
                                     background-color: rgba(122, 98, 160, 0.534);
                                     color: white;
                                     text-align: center;
-                                }                                            
+                                    height: 250px;
+                                    width: 30%;
+                                    
+                                }   
+                                    .boton9{
+                                        display: flex;
+                                        align-items: center;
+                                        
+                                    }                                         
                                             #nine header img{
-                                                animation: carInMovement2 5s infinite; 
+                                                margin-left: 20px;
+                                                width: 60px;
+                                                height: 60px;
                                             }
-                                            @keyframes carInMovement2 {
-                                                0%{
-                                                    transform: translateX(0%);  
-                                                }
-                                                100%{
-                                                    transform: translateX(100%);
-                                                }
-                    
-                                            }
+
                                 /*-------------Ten-----------*/
+                                #ten{
+                                    display: flex;
+                                    align-self: flex-end;
+                                    justify-content: space-evenly;
+
+                                }
+                                #ten header{
+                                    height: 350px;
+                                    width: 50%; 
+                                }
                                 #ten form{
                                     background-color: rgba(122, 214, 110, 0.534);
                                     color: white;
                                     text-align: center;
+                                    width: 30%;
                                 }
                                             #ten header img{
                                                 animation: zoom 3s infinite 4s forwards;
