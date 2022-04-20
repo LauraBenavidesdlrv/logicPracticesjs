@@ -6,12 +6,17 @@ body{
 }
     .wrapper{
         margin: 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
 
     /*Header*/
         #header{
+            width: 100%;
             height: 550px;
-            margin: 100px 50px 0px 50px ;
+            margin: 30px 50px 0px 50px ;
         }
             #header h1{
                 font-size: 4em;
@@ -31,17 +36,16 @@ body{
                 padding: 10px;
                 border-radius: 50px;
                 color: coral;
-                display: flex;
-                align-self: flex-start;
                 margin: 20px 0px;
-            }
-            
-
-            #img-bolita{
+                width: fit-content;
+            }    
+             #img-bolita{
                 margin-top: 40px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                
+                width: 100%;
             }
             #header #images-banner{
                 border: 1px solid;
@@ -50,8 +54,8 @@ body{
                 color: black;
                 z-index: 0;
                 margin: 10px;
-                position: relative;
-                left: 10px;
+
+                
                 width: 6%;
             }
             .arriba{
@@ -89,15 +93,17 @@ body{
             }
             /*Levels*/
             .levels{
-                margin-left: 53px;
+
                 font-size: 2.5em;
             }
             /*Contenido*/
                 main{
                     display: flex;
                     flex-direction: column;
-                    flex-wrap: wrap;
                     margin: 60px;
+                    justify-content: center;
+                    align-items: center;
+                    width: 100%;
                 }
                 /*Generales section*/
                     .article{
@@ -108,7 +114,8 @@ body{
                         margin-bottom: 30px;  
                         align-items: center;
                         justify-content: space-around;
-                        width: fit-content;                    
+                        width: 85%;  
+                                          
                     }
                         .article header{
                             width: 50%;
@@ -131,6 +138,7 @@ body{
                                 padding: 10px;
                                 border-radius: 3px;
                                 border: 1px solid white;
+                                width: 70%;
                                 
                             }
                             .buttons{
@@ -147,6 +155,8 @@ body{
                                 background-color: rgba(82, 70, 70, 0.281);
                                 color: white;
                                 font-size: 1.3em;
+                                width: 60%;
+                                justify-content: center;
                             }
                             
                             #result{
@@ -166,6 +176,7 @@ body{
                                 background-color: rgb(255, 175, 146);
                                 width: 30%;
                             }
+
                                 #one header img{
                                     width: 10%;
                                     animation: carInMovement 4s infinite;
@@ -186,9 +197,7 @@ body{
 
 
                             /*-------------Two-----------*/
-                            #two{
-                                align-self: flex-end;                   
-                            }
+
                                 #two header{
                                     margin-left: 30px;
                                     width: 40%;
@@ -218,21 +227,17 @@ body{
                                     }
                                     #two header a{
                                         color:rgb(87, 146, 148) ;
+
                                     }
                                     #two header .img{
                                         margin-bottom: 40px;
                                         display: flex;
                                         align-self: center;
                                     }
-                                    #two header .img2{
-                                        animation: rebote 6s infinite;
-                                        margin-top: 20px;
-                                        display: flex;
-                                        align-self: center;
-                                    }
+
                                     #two header  img{
                                         margin: 20px;
-                                        animation:  6s infinite;
+                                        animation:  rebote 6s infinite;
 
 
                                     }
@@ -245,25 +250,26 @@ body{
                                             width: 25%;
                                         }  
                                     }
+
                                 /*-------------Three-----------*/
-                                #three{
-                                    display: flex;
-                                    justify-content: space-between;
-                                    width: 80%;
-                                    padding: 20px;                            
-                                }
+
                                     #three header{
                                         line-height: 1.5em;
-                                        margin-left: 10px;
+                                        margin-left: 80px;
                 
                                     }
                                     .code-three{
                                         display: flex;
+                                        justify-content: center;
+                                        margin-bottom: 30px;
 
                                     
                                     }
+
                                     #three header a{
                                         color:rgba(236, 177, 15, 0.534);
+                                        
+
                                     }
 
                                     #three form{
@@ -271,11 +277,11 @@ body{
                                         color: white;
                                         text-align: center;
                                         border-radius: 15px;
-                                        width: 55%;
-                                        padding: 30px;
+                                        max-width: 55%;
+                                        padding: 50px;
                                     }
                                         #three .header-table{
-                                            font-size: 1.3em;
+                                            font-size: 1em;
                                         }
 
                                         #three table input{
@@ -286,13 +292,22 @@ body{
                                             
                                         }
                                         #three table input[type=number]{
-                                            width: 35px;
+                                            width: 30%;
+                                            margin: 0px 2px 0px 2px;
+                                            
+                                        }
+                                        #three table input[type=text]{
+                                            width: 80%;
+                                            margin: 0px 100px 0px 2px;
                                             
                                         }
                                             #three header img{
                                                 animation: rotar 0.5s infinite 4s forwards;
                                                 display: block;
-                                                margin: auto;
+                                                margin-left: 15px;
+                                                width: 60px;
+                                                height: 60px;
+                                                margin-top:15px ;
                                             }
                                         @keyframes rotar {
                                             0%{
@@ -307,12 +322,6 @@ body{
                                             }  
                                         }
                                 /*-------------Four-----------*/
-                                #four{
-                                    display: flex;
-                                    align-self: flex-end; 
-                                    justify-content: center;
-                                    width: 70%;                  
-                                }
                                     .title4{
                                         display: flex;
                                         align-items: center;
@@ -328,7 +337,7 @@ body{
                                     text-align: center; 
                                     width: 30%;   
                                     display: flex;
-                                    height: 250px;                          
+                                    padding-bottom: 20px;                         
                                 }
                                             #four header img{
                                                 animation: rebote 6s infinite forwards;
@@ -385,14 +394,14 @@ body{
                                                 }                        
                                             }
                                 /*-------------Five-----------*/
-                                #five{
-                                    display: flex; 
-                                    justify-content: center;
-                                    width: 70%;                  
-                                }
+
                                     #five header{
                                         height: fit-content;
                                         line-height: 1.5em;
+                                    }
+                                    #five header a{
+                                        color:rgba(122, 214, 110, 0.534) ;
+                                       
                                     }
                                     .futbol{
                                         display: flex;
@@ -452,6 +461,7 @@ body{
                                     #five .header-table{
                                         font-size: 1.3em;
                                     }
+
                                     #five header img{
                                         margin-left: 30px;
                                         width: 15%;                          
@@ -473,13 +483,7 @@ body{
 
 
                                 /*-------------Six-----------*/
-                                #six{
-                                    display: flex;
-                                    align-self: flex-end; 
-                                    justify-content: center;
-                                    width: 70%;   
-                                                  
-                                }
+
                                 #six form{
                                     background-color: rgb(255, 175, 146);
                                     color: white;
@@ -488,6 +492,7 @@ body{
                                     display: flex;
                                     height: fit-content;                           
                                 }
+
                                     #six header img{
                                         animation: rotar 1s infinite 4s forwards;
                                         width: 10%;
@@ -495,15 +500,17 @@ body{
                                         margin-left: 20px;
                                     }
                                 /*-------------Seven-----------*/
-                                #seven{
-                                    width:70% ;
-                                }
+
                                  #seven header img{                                        animation:  3s infinite 4s forwards;
                                     display: block;
                                     margin: auto;
                                     margin-left: 0px;
                                     width: 50px;
                                     height: 50px;
+                                }
+                                #seven header a{
+                                    color:rgb(87, 146, 148) ;
+
                                 }
                                 .boton7{
                                     display: flex;
@@ -514,14 +521,16 @@ body{
                                     color: white;
                                     text-align: center;
                                     width: 30%;
-                                    height: 250px
+                                    height: 250px;
+                                    display: flex;                                    
                                 }
                                            
                                 /*-------------Eight-----------*/
-                                #eight{
-                                    display: flex;
-                                    align-self: flex-end;
+                                #eight header a{
+                                    color:rgba(236, 177, 15, 0.534) ;
+
                                 }
+
                                 #eight form{
                                     background-color: rgba(236, 177, 15, 0.534);
                                     color: white;
@@ -535,12 +544,14 @@ body{
                                             margin-bottom: 30px;
                                         }
                                 /*-------------Nine-----------*/
-                                #nine {
-                                    width: 70%;
-                                }
+
                                 #nine header{
                                     width: 50%;
                                    
+                                }
+                                #nine header a{
+                                    color:rgba(122, 98, 160, 0.534) ;
+
                                 }
                                 #nine form{
                                     background-color: rgba(122, 98, 160, 0.534);
@@ -562,11 +573,9 @@ body{
                                             }
 
                                 /*-------------Ten-----------*/
-                                #ten{
-                                    display: flex;
-                                    align-self: flex-end;
-                                    justify-content: space-evenly;
 
+                                #ten header a{
+                                    color:rgba(122, 214, 110, 0.534);
                                 }
                                 #ten header{
                                     height: 350px;
@@ -583,3 +592,106 @@ body{
                                                 display: block;
                                                 margin: auto;
                                             }
+                        /*Responsive*/
+
+                        @media (max-width:1075px) {
+                            #two{
+                                flex-direction: column;
+                            }
+                            #two header{
+                               width: 80%;
+                            }
+                            #two form{
+                                width: 60%;
+                            }
+                            #three{
+                                flex-direction: column;
+                            }
+                            #three header{ 
+                               width: 100%;
+                               margin: 0;
+                            }
+                            #three form{
+                                width: 65%;
+                                padding: 60px;
+                            }
+                            #five{
+                                flex-direction: column;
+                            }
+                            #five header{
+                               width: 80%;
+                            }
+                            #five .futbol{
+                                display: flex;
+                                justify-content: center;
+                                margin-bottom: 30px;
+                                width: 50%;
+                             }
+                             #five form{
+                                width: 55%;
+                                padding: 60px;
+                            }
+                             #five #balon{
+                                width: 10%;
+                             }
+                        }
+                        @media (max-width:880px) {
+                            #one form{
+                                width: 45%;
+                            }                           
+                            #three form{
+                                width: 75%;
+                                padding: 60px;
+                            }
+                            #four form{ 
+                              width: 50%;
+                            }
+                            #five form{ 
+                                width: 70%;
+                            }
+                            #six form{ 
+                                width: 45%;
+
+                            }
+                            #seven form{ 
+                                width: 45%;
+                            }
+                            #nine form{ 
+                                width: 45%;
+                            }
+                            #ten form{ 
+                                width: 42%;
+                            }
+                   
+                        }
+                        @media (max-width:660px) {
+                            #one form {
+                                width: 45%;
+                            } 
+                            #three form{
+                                
+                                padding: 80px;
+                            }                          
+
+
+                            #four form{ 
+                              width: 50%;
+                            }
+                            #five form{ 
+                                width: 70%;
+                            }
+                            #six form{ 
+                                width: 45%;
+
+                            }
+                            #seven form{ 
+                                width: 45%;
+                            }
+                            #nine form{ 
+                                width: 45%;
+                            }
+                            #ten form{ 
+                                width: 42%;
+                            }
+                   
+                        }
